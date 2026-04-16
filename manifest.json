@@ -1,0 +1,14 @@
+{
+  "vendor": "brunofow",
+  "name": "vtex-checkout-kit",
+  "version": "0.1.0",
+  "title": "VTEX Checkout Kit",
+  "description": "Frontend-only boilerplate for VTEX Checkout customizations",
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "checkout-ui-custom": "0.x"
+  },
+  "scripts": {},
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
