@@ -1,0 +1,12 @@
+{
+  "name": "checkout-ui-kit",
+  "vendor": "{vendor}",
+  "version": "0.1.0",
+  "title": "VTEX Checkout Kit",
+  "description": "Boilerplate for VTEX checkout UI customization",
+  "builders": {
+    "checkout-ui-custom": "0.x"
+  },
+  "credentialType": "absolute",
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

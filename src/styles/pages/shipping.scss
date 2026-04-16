@@ -1,0 +1,212 @@
+.accordion-group.shipping-data {
+  position: relative;
+  background: none;
+
+  .accordion-heading {
+    .accordion-toggle {
+      font-size: 0;
+      height: 0;
+    }
+  }
+
+  &::before {
+    content: 'Endereço';
+    font-size: 30px;
+    font-weight: 700;
+    color: $primary;
+
+    position: absolute;
+    top: -38px;
+    left: 0;
+  }
+}
+
+.vtex-omnishipping-1-x-shippingSectionTitle {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: $text !important;
+}
+
+.ship-postalCode {
+  a {
+    color: $primary;
+  }
+}
+
+.vtex-omnishipping-1-x-svg {
+  stroke: $primary;
+
+  path {
+    fill: $primary;
+  }
+}
+
+.vtex-omnishipping-1-x-dateLink {
+  border: 1px solid $primary !important;
+  color: $primary !important;
+}
+
+.vtex-omnishipping-1-x-addressSummaryActive .address-summary {
+  background: #ffffff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 12px 12px;
+}
+
+.btn-go-to-payment {
+  width: 100%;
+}
+
+.vtex-omnishipping-1-x-scheduledDelivery {
+  padding: 0 !important;
+}
+
+.vtex-omnishipping-1-x-scheduledDeliveryList {
+  border: 0 !important;
+}
+
+.dh-schedule-delivery {
+  margin-top: 20px;
+
+  &::before {
+    content: 'Data de entrega';
+    color: $text;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .vtex-omnishipping-1-x-scheduledDelivery {
+    margin-top: 10px;
+  }
+
+  .react-datepicker__input-container {
+    > div {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      span.vtex-omnishipping-1-x-selectedDate {
+        margin: 0 !important;
+        font-size: 1rem;
+      }
+    }
+
+    button {
+      text-align: left !important;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: calc(50% - 10px);
+        width: 24px;
+        height: 20px;
+        right: 16px;
+      }
+
+      &.vtex-omnishipping-1-x-dateLinkModify {
+        width: 100%;
+        border: 1px solid $primary;
+        border-radius: 5px;
+        padding: 8px 4px;
+        margin: 10px 0;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+select {
+  font-size: 1rem;
+}
+
+.react-datepicker {
+  width: 100%;
+
+  .react-datepicker__month-container {
+    width: 100%;
+  }
+
+  .react-datepicker__header {
+    background: #ffffff;
+  }
+
+  .react-datepicker__day--keyboard-selected,
+  .react-datepicker__day--selected {
+    background: $primary !important;
+    border-radius: 50%;
+  }
+}
+
+.vtex-omnishipping-1-x-dateLinkModify {
+  color: $primary !important;
+}
+
+#force-shipping-fields {
+  color: $primary !important;
+}
+
+#open-shipping {
+  border: 1px dashed $primary;
+  color: $primary;
+}
+
+.custom-shipping-terms {
+  padding: 1rem 0;
+
+  .custom-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: pointer;
+  }
+
+  .custom-checkbox {
+    display: none;
+  }
+
+  .custom-label span::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    min-width: 16px;
+    border: 2px solid $primary;
+    border-radius: 4px;
+    background: #fff;
+    transition: 0.2s;
+    margin-top: 2px;
+    display: block;
+  }
+
+  .custom-checkbox:checked + span::before {
+    background: $primary;
+    box-shadow: inset 0 0 0 3px #fff;
+  }
+
+  .custom-label span {
+    font-size: 10px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  &.error {
+    .custom-label span {
+      color: red;
+    }
+
+    .custom-label span::before {
+      border: 2px solid red;
+    }
+  }
+}
+
+.vtex-omnishipping-1-x-submitPaymentButton {
+  position: relative;
+
+  .custom-button-overlay {
+    position: absolute;
+    inset: 0;
+  }
+}

@@ -1,0 +1,6 @@
+import './cart.scss'
+import './profile.scss'
+import './shipping.scss'
+import './payment.scss'
+import './summary.scss'
+import './email.scss'

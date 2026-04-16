@@ -1,0 +1,69 @@
+.client-notice {
+  display: none;
+}
+
+.accordion-group.client-profile-data {
+  position: relative;
+  padding: 0 !important;
+
+  &::before {
+    content: 'Contato';
+    font-size: 30px;
+    font-weight: 700;
+    color: $primary;
+
+    position: absolute;
+    top: -38px;
+    left: 0;
+  }
+
+  .accordion-inner {
+    padding: 0 !important;
+  }
+
+  form {
+    padding: 10px;
+  }
+}
+
+.accordion-heading .accordion-toggle {
+  > i,
+  > span {
+    display: none;
+  }
+}
+
+.link-box-edit {
+  top: -46px !important;
+}
+
+.box-client-info-pf {
+  display: flex;
+  flex-direction: column;
+
+  > p {
+    float: none;
+
+    input {
+      max-width: 215px;
+      width: 100%;
+    }
+  }
+}
+
+#is-corporate-client,
+#not-corporate-client {
+  color: $primary !important;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+#go-to-shipping {
+  width: 100%;
+}
+
+.form-step.box-info {
+  padding: 10px;
+}
